@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="css/main.css"> <!-- Sostituisci con il percorso del tuo file CSS -->
   <link rel="stylesheet" href="login/login.css">
   <script>
     function checkPassword() {
@@ -20,10 +21,12 @@
 </head>
 
 <body>
+<body class="day">
 <h1>Federico Schermi</h1>
 <div class="password-container">
   <input type="password" id="password" required autocomplete="off" placeholder=" " onkeypress="if(event.keyCode == 13) checkPassword();">
   <label for="password">password</label>
 </div>
+</body>
 </body>
 </html>
