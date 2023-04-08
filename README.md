@@ -15,7 +15,7 @@ This project is distributed under the MIT License. See the LICENSE file for more
 If you have any questions about the project, feel free to reach out to me via:
 
 - Email: federicoschermi60@gmail.com
-- Twitter: @SchermiFederico
+- Twitter: [@SchermiFederico](https://twitter.com/SchermiFederico)
 
 Thank you for visiting my website!
 
