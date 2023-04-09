@@ -15,14 +15,25 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animate.css">
 
-    <link rel="icon" type="image/svg" href="images/sun.svg">
+    <link rel="icon" type="image/svg" href="../images/sun.svg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+        function checkAuthentication() {
+            var isAuthenticated = localStorage.getItem('isAuthenticated');
+            if (isAuthenticated !== 'true') {
+                window.location.href = "../../index.html";
+            }
+        }
+
+    </script>
+
     <script>
         $(document).ready(function(){
             $("#moon").click(function(){
@@ -72,12 +83,12 @@
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<body class="day">
+<body class="day", onload="checkAuthentication()">
 <div class="container animated fadeIn one">
     <div class="row group">
         <div class="three columns icon">
-            <img src="images/moon.svg" id="moon">
-            <img src="images/sun.svg" id="sun">
+            <img src="../images/moon.svg" id="moon">
+            <img src="../images/sun.svg" id="sun">
         </div>
 
         <div class="six columns offset-by-three">
