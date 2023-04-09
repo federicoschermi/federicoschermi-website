@@ -23,60 +23,6 @@
     <link rel="icon" type="image/svg" href="../images/sun.svg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script>
-        function checkAuthentication() {
-            var isAuthenticated = localStorage.getItem('isAuthenticated');
-            if (isAuthenticated !== 'true') {
-                window.location.href = "../../index.html";
-            }
-        }
-
-    </script>
-
-    <script>
-        $(document).ready(function(){
-            $("#moon").click(function(){
-                $("body").addClass("day");
-                $("body").removeClass("night");
-            });
-            $("#sun").click(function(){
-                $("body").removeClass("day");
-                $("body").addClass("night");
-            });
-        });
-
-    </script>
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Sept 14, 2020 08:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = now - countDownDate;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="counter"
-            document.getElementById("counter").innerHTML = days + " days, " + hours + " hour" + (hours === 1 ? "" : "s") + ", " + minutes + " minute" + (minutes === 1 ? "" : "s") + ", and "  + seconds + " second" + (seconds === 1 ? "" : "s");
-
-            // If the count down errors, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("counter").innerHTML = "year";
-            }
-        }, 1000);
-    </script>
 </head>
 <body>
 
@@ -214,5 +160,8 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="../js/authentication/authentication.js"></script>
+<script src="../js/themeToggle/themeToggle.js"></script>
+<script src="../js/countdown/countdown.js"></script>
 </body>
 </html>
