@@ -6,29 +6,13 @@
   <title>Login</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/login/login.css">
-
-  <script>
-    function checkPassword() {
-      var password = document.getElementById("password").value;
-      var correctPassword = "6969"; // Inserisci qui la password corretta
-
-      if (password === correctPassword) {
-        localStorage.setItem('isAuthenticated', 'true');
-        window.location.href = "main.html";
-      } else {
-        alert("Password errata, riprova.");
-      }
-    }
-
-
-  </script>
 </head>
-
 <body class="day">
 <h1>Federico Schermi</h1>
 <div class="password-container">
-  <input type="password" id="password" required autocomplete="off" placeholder=" " onkeypress="if(event.keyCode == 13) checkPassword();">
+  <input type="password" id="password" required autocomplete="off" placeholder=" ">
   <label for="password">password</label>
 </div>
+<script src="../js/login/login.js"></script>
 </body>
 </html>
