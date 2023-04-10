@@ -196,7 +196,7 @@ body.night h4 {
     letter-spacing: 1.5px;
     line-height: 20px;
     margin-top: 0px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 body.day h4 {
@@ -206,7 +206,7 @@ body.day h4 {
     letter-spacing: 1.5px;
     line-height: 20px;
     margin-top: 0px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 body.night #moon {
