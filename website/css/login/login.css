@@ -8,7 +8,7 @@ body.day, body.night {
 }
 
 h1 {
-    font-family: NeueHaasMedium;
+    font-family: JetBrainsBold;
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -23,7 +23,7 @@ h1 {
 input {
     width: 100%;
     padding: 0.5rem;
-    font-family: NeueHaas;
+    font-family: JetBrainsRegular;
     font-size: 16px;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -45,7 +45,7 @@ label {
     position: absolute;
     left: 0.5rem;
     top: 0.6rem;
-    font-family: NeueHaas;
+    font-family: JetBrainsRegular;
     font-size: 16px;
     color: #999;
     pointer-events: none;
