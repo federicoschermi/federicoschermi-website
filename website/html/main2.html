@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Federico Schermi</title>
+  <meta name="description" content="Computer engineering student at the Politecnico di Milano">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animate.css">
+
+  <link rel="icon" type="image/svg" href="../images/sun.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body class="day", onload="checkAuthentication()">
+<div class="container animated fadeIn one">
+  <div class="row group">
+    <div class="three columns icon">
+      <img src="../images/moon.svg" id="moon">
+      <img src="../images/sun.svg" id="sun">
+    </div>
+
+    <div class="six columns offset-by-three">
+      <h1 class="night">Hi, I'm Federico Schermi.</h1>
+
+      <div class="animated fadeIn two">
+        <p>Computer engineering student at the <a href="https://www.polimi.it/" target="_blank" class="underline">Politecnico di Milano</a> for the last <span id="counter"><br></span>.</p>
+
+        <p>I live in Milan. Keep up with me on <a href="https://linkedin.com/in/federicoschermi" target="_blank" class="underline">LinkedIn</a> or <a href="https://twitter.com/SchermiFederico" target="_blank" class="underline">Twitter</a>.</p>
+
+        <div class="spacer48"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inizio contenuto delle tre colonne sotto la colonna di destra -->
+  <div class="row group">
+    <!-- Prima colonna: Work Experience -->
+    <div class="four columns">
+      <div class = "row group">
+        <div class = "three columns offset-by-six animated fadeIn three">
+          <div class = "animated fadeIn three">
+            <h4>WORK EXPERIENCE</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night">BitPolimi</h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Software Programmer</h3>
+          <h4>Milan</h4>
+          <h4>Skills: Rust (Programming Language) · C (Programming Language)</h4>
+          <h4>2021–2022</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://www.uniroma1.it/en/pagina-strutturale/home" target="_blank" class="underline">Sapienza University of Rome</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Team leader</h3>
+          <h4>Rome</h4>
+          <h4>Team leader in a robotics team with the goal of building and developing a robot for human assistance.</h4>
+          <h4>Skills: Team leadership · Python (Programming Language)</h4>
+          <h4>2018</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://www.chimerarevo.com/" target="_blank" class="underline">ChimeraRevo</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Blogger</h3>
+          <h4>Remote</h4>
+          <h4>2018</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night">MobileToday</h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Blogger</h3>
+          <h4>Remote</h4>
+          <h4>2017-2018</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seconda colonna: Education -->
+    <div class="four columns">
+      <div class = "row group">
+        <div class = "three columns offset-by-six animated fadeIn three">
+          <div class = "animated fadeIn three">
+            <h4>EDUCATION</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://www.polimi.it/" target="_blank" class="underline">Politecnico di Milano</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>B.Sc. in Computer Engineering</h3>
+          <h4>Milan</h4>
+          <h4>2020–now</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terza colonna: Certification -->
+    <div class="four columns">
+      <div class = "row group">
+        <div class = "three columns offset-by-six animated fadeIn three">
+          <div class = "animated fadeIn three">
+            <h4>CERTIFICATION</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://www.freecodecamp.org/" target="_blank" class="underline">freeCodeCamp</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Relational Database</h3>
+          <h4>Remote</h4>
+          <h4>2022</h4>
+        </div>
+      </div>
+
+      <div class="row group">
+        <div class="three columns offset-by-six animated fadeIn three">
+          <h2 class="night"><a href="https://www.codecademy.com/learn/learn-java" target="_blank" class="underline">Codecademy</a></h2>
+        </div>
+        <div class="three columns animated fadeIn three">
+          <h3>Java fundamentals</h3>
+          <h4>Remote</h4>
+          <h4>2022</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fine contenuto delle tre colonne sotto la colonna di destra -->
+</div>
+
+</div>
+</body>
+
+<script src="../js/authentication/authentication.js"></script>
+<script src="../js/themeToggle/themeToggle.js"></script>
+<script src="../js/countdown/countdown.js"></script>
+</body>
+</html>
