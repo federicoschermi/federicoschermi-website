@@ -1,18 +1,21 @@
 # federicoschermi.dev
 This is the GitHub repository for my personal website. The website is built using HTML, CSS, and JavaScript.
 
-## Project Structure
-The project is organized in the following file structure:
-<!--
-- index.html: The main file of the website along with the main.html file, containing the HTML structure.
-- css/: This folder contains all CSS files used for styling the website.
-- images/: This folder contains all images used on the website.
--->
+## Some stuff
+For the design and style of the website, I used the following libraries:
+- [animate](https://animate.style/) for animations;;
+- [normalize.css](https://necolas.github.io/normalize.css/) as an alternative to CSS resets;
+- [skeleton](http://getskeleton.com/) as a boilerplate for small projects like mine.
+
+For authentication handling, login window (which will be removed), countdown, and theme toggle, I used JavaScript.
+
+I chose to use the [JetBrains Mono](https://www.jetbrains.com/lp/mono/)font, which I believe is an excellent choice for readability.
+
 ## License
 This project is distributed under the MIT License. See the LICENSE file for more information.
 
 ## Contact
-If you have any questions about the project, feel free to reach out to me via:
+If you have any questions about the project, feel free to contact me through the following channels:
 
 - Email: federicoschermi60@gmail.com
 - Twitter: [@SchermiFederico](https://twitter.com/SchermiFederico)
