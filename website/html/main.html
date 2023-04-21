@@ -24,12 +24,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
+
+<!--
 <body>
+-->
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<body class="day", onload="checkAuthentication()">
+<body class="day cursor-light" onload="checkAuthentication()">
+<div id="hello-world" class="animate__animated" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; text-align: center;">
+    Hello World!
+</div>
+
+<div id="site-content" style="display: none;">
 <div class="container animated fadeIn one">
     <div class="row group">
         <div class="three columns icon">
@@ -41,9 +49,9 @@
             <h1 class="night">Hi, I'm Federico Schermi.</h1>
 
             <div class="animated fadeIn two">
-                <p>Computer engineering student at the <a href="https://www.polimi.it/" target="_blank" class="underline">Politecnico di Milano</a> for the last <span id="counter"><br></span>.</p>
+                <p>Computer engineering student at the <a href="https://www.polimi.it/" target="_blank" class="underline link-cursor-light">Politecnico di Milano</a> for the last <span id="counter"><br></span>.</p>
 
-                <p>I live in Milan. Keep up with me on <a href="https://linkedin.com/in/federicoschermi" target="_blank" class="underline">LinkedIn</a> or <a href="https://twitter.com/SchermiFederico" target="_blank" class="underline">Twitter</a>.</p>
+                <p>I live in Milan. Keep up with me on <a href="https://linkedin.com/in/federicoschermi" target="_blank" class="underline link-cursor-light">LinkedIn</a> or <a href="https://twitter.com/SchermiFederico" target="_blank" class="underline link-cursor-light">Twitter</a>.</p>
 
 
                 <div class="spacer48"></div>
@@ -72,11 +80,17 @@
             <h4>Skills: Rust (Programming Language) · C (Programming Language)</h4>
             <h4>2021–2022</h4>
         </div>
+        <!--
+        <div class="six columns offset-by-six">
+            <h4>Skills: Rust (Programming Language) · C (Programming Language)</h4>
+            <h4>2021–2022</h4>
+        </div>
+        -->
     </div>
 
     <div class="row group">
         <div class="three columns offset-by-six animated fadeIn three">
-            <h2 class="night"><a href="https://www.uniroma1.it/en/pagina-strutturale/home" target="_blank" class="underline">Sapienza University of Rome</a></h2>
+            <h2 class="night"><a href="https://www.uniroma1.it/en/pagina-strutturale/home" target="_blank" class="underline link-cursor-light">Sapienza University of Rome</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
             <h3>Team leader</h3>
@@ -85,11 +99,18 @@
             <h4>Skills: Team leadership · Python (Programming Language)</h4>
             <h4>2018</h4>
         </div>
+        <!--
+        <div class="six columns offset-by-six">
+            <h4>Team leader in a robotics  team with the goal of building and developing a robot for human assistance.</h4>
+            <h4>Skills: Team leadership · Python (Programming Language)</h4>
+            <h4>2018</h4>
+        </div>
+        -->
     </div>
 
     <div class="row group">
         <div class="three columns offset-by-six animated fadeIn three">
-            <h2 class="night"><a href="https://www.chimerarevo.com/" target="_blank" class="underline">ChimeraRevo</a></h2>
+            <h2 class="night"><a href="https://www.chimerarevo.com/" target="_blank" class="underline link-cursor-light">ChimeraRevo</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
             <h3>Blogger</h3>
@@ -121,7 +142,7 @@
 
     <div class="row group">
         <div class="three columns offset-by-six animated fadeIn three">
-            <h2 class="night"><a href="https://www.polimi.it/" target="_blank" class="underline">Politecnico di Milano</a></h2>
+            <h2 class="night"><a href="https://www.polimi.it/" target="_blank" class="underline link-cursor-light">Politecnico di Milano</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
             <h3>B.Sc. in Computer Engineering</h3>
@@ -142,7 +163,7 @@
 
     <div class="row group">
         <div class="three columns offset-by-six animated fadeIn three">
-            <h2 class="night"><a href="https://www.freecodecamp.org/" target="_blank" class="underline">freeCodeCamp</a></h2>
+            <h2 class="night"><a href="https://www.freecodecamp.org/" target="_blank" class="underline link-cursor-light">freeCodeCamp</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
             <h3>Relational Database</h3>
@@ -153,7 +174,7 @@
 
     <div class="row group">
         <div class="three columns offset-by-six animated fadeIn three">
-            <h2 class="night"><a href="https://www.codecademy.com/learn/learn-java" target="_blank" class="underline">Codecademy</a></h2>
+            <h2 class="night"><a href="https://www.codecademy.com/learn/learn-java" target="_blank" class="underline link-cursor-light">Codecademy</a></h2>
         </div>
         <div class="three columns animated fadeIn three">
             <h3>Java fundamentals</h3>
@@ -164,8 +185,11 @@
 
 
 </div>
-
 </div>
+
+<!--
+</div>
+-->
 </body>
 
 <!-- End Document
@@ -173,5 +197,8 @@
 <script src="../js/authentication/authentication.js"></script>
 <script src="../js/themeToggle/themeToggle.js"></script>
 <script src="../js/countdown/countdown.js"></script>
+<script src="../js/helloworld/helloWorld.js"></script>
+<!--
 </body>
+-->
 </html>

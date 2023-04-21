@@ -267,3 +267,21 @@ body.day #sun {
 
 
 }
+
+.cursor-light {
+    cursor: url('../images/sun.svg') 16 16, auto;
+}
+
+.cursor-dark {
+    cursor: url('../images/sunLight.svg') 16 16, auto;
+}
+
+.link-cursor-light {
+    cursor: url('../images/sunHoleDark.svg') 16 16, pointer;
+}
+
+.link-cursor-dark {
+    cursor: url('../images/sunHoleLight.svg') 16 16, pointer;
+}
+
+
