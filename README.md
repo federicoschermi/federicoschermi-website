@@ -3,7 +3,7 @@ This is the GitHub repository for my personal website. The website is built usin
 
 ## Some stuff
 For the design and style of the website, I used the following libraries:
-- [animate](https://animate.style/) for animations;;
+- [animate](https://animate.style/) for animations;
 - [normalize.css](https://necolas.github.io/normalize.css/) as an alternative to CSS resets;
 - [skeleton](http://getskeleton.com/) as a boilerplate for small projects like mine.
 
