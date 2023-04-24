@@ -266,7 +266,7 @@ body.day #sun {
 }
 
 .cursor-light {
-    cursor: url('../images/sun.svg') 16 16, auto;
+    cursor: url('../images/sunDark.svg') 16 16, auto;
 }
 
 .cursor-dark {
