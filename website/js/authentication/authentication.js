@@ -1,7 +1,9 @@
-function checkAuthentication() {
-    var isAuthenticated = localStorage.getItem("isAuthenticated");
-    if (isAuthenticated !== "true") {
-        window.location.href = "../../index.html";
+export function checkAuthentication() {
+    function checkAuthentication() {
+        var isAuthenticated = localStorage.getItem("isAuthenticated");
+        if (isAuthenticated !== "true") {
+            window.location.href = "../../index.html";
+        }
     }
 }
 
