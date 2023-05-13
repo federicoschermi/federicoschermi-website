@@ -280,35 +280,3 @@ body.day #sun {
 .link-cursor-dark {
     cursor: url('../images/sunHoleLight.svg') 16 16, pointer;
 }
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#start-button {
-    margin-bottom: 20px;
-}
-
-/* Contenitore padre che tiene insieme webcam e label */
-#main-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Questo crea una griglia con due colonne, dove la seconda colonna è due volte più larga della prima */
-    gap: 20px; /* Questo crea un po' di spazio tra le colonne */
-}
-
-#webcam-container {
-    grid-column: 1; /* Posiziona il webcam-container nella prima colonna */
-}
-
-#webcam-container canvas {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;  /* Arrotonda i bordi */
-}
-
-#label-container {
-    grid-column: 2; /* Posiziona il label-container nella seconda colonna */
-}
