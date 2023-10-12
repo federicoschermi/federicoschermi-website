@@ -6,7 +6,7 @@ document.getElementById("password").addEventListener("keypress", function(event)
 
 function checkPassword() {
     var password = document.getElementById("password").value;
-    var correctPassword = "6969"; // Inserisci qui la password corretta
+    var correctPassword = "6969"; // Good job, you found it!
 
     if (password === correctPassword) {
         localStorage.setItem("isAuthenticated", "true");
