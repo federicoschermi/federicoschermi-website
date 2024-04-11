@@ -1,17 +1,31 @@
+const supabase = require('../supabase/supabase.js');
+
+document.getElementById("login-button").addEventListener("click", checkPassword);
+
 document.getElementById("password").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         checkPassword();
     }
 });
 
-function checkPassword() {
+async function checkPassword() {
+    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var correctPassword = "6969"; // Good job, you found it!
 
-    if (password === correctPassword) {
+    try {
+        const {error } = await supabase.auth.signIn({
+            email: email,
+            password: password
+        });
+
+        if (error) {
+            throw error;
+        }
+
         localStorage.setItem("isAuthenticated", "true");
         window.location.href = "main.html";
-    } else {
-        alert("Password errata, riprova.");
+    } catch (error) {
+        alert("Authentication failed. Retry.");
+        console.error('Error during authentication:', error.message);
     }
 }

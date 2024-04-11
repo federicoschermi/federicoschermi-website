@@ -6,12 +6,20 @@
   <title>Login</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/login/login.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body class="day">
 <h1>Federico Schermi</h1>
-<div class="password-container">
-  <input type="password" id="password" required autocomplete="off" placeholder=" ">
-  <label for="password">password</label>
+<div class="login-container">
+  <div class="input-container">
+    <input type="email" id="email" required autocomplete="off" placeholder=" ">
+    <label for="email">Email</label>
+  </div>
+  <div class="input-container">
+    <input type="password" id="password" required autocomplete="off" placeholder=" ">
+    <label for="password">Password</label>
+  </div>
+  <button id="login-button">Login</button>
 </div>
 <script src="../js/login/login.js"></script>
 </body>
